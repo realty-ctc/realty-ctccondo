@@ -1,20 +1,5 @@
-<?php
-namespace Simply_Static;
-
-class Cancel_Task extends Task {
-
-	/**
-	 * @var string
-	 */
-	protected static $task_name = 'cancel';
-
-	public function perform() {
-		$this->save_status_message( __( 'Cancelling job', 'simply-static' ) );
-
-		$wrapup_task = new Wrapup_Task();
-		$wrapup_task->perform();
-
-		return true;
-	}
-
-}
+<br />
+<b>Fatal error</b>:  Uncaught Error: Class 'Simply_Static\Task' not found in D:\xampp\htdocs\realty-ctccondo\wp-content\plugins\simply-static\includes\tasks\class-ss-cancel-task.php:4
+Stack trace:
+#0 {main}
+  thrown in <b>D:\xampp\htdocs\realty-ctccondo\wp-content\plugins\simply-static\includes\tasks\class-ss-cancel-task.php</b> on line <b>4</b><br />
